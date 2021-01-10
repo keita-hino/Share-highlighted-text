@@ -16,8 +16,6 @@
     ]
   },
   "permissions": [
-    "background",
-    "activeTab",
     "contextMenus",
     "clipboardWrite"
   ]
