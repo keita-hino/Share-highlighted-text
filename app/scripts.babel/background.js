@@ -24,9 +24,9 @@ chrome.contextMenus.update(contextMenus, {
   }
 })
 
-// ScrollToTextFragment付きのURLを返す 
+// ScrollToTextFragment付きのURLを返す
 const generateURLWithScrollToTextFragment = (info, currentPath) => {
-  return currentPath + '#:~:text=' + info.selectionText;
+  return encodeURI(currentPath + '#:~:text=' + info.selectionText);
 }
 
 // クリップボードに書き込み
